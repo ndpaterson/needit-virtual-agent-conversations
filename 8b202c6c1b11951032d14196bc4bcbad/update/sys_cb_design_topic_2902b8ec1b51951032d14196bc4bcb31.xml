@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Update NeedIt records">ad02b8ec1b51951032d14196bc4bcb2e</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"29b848506c80463a92fa97f4d8b26425","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"29b848506c80463a92fa97f4d8b26425"}],"goals":[{"name":"primary","trigger_id":"29b848506c80463a92fa97f4d8b26425","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"I can help you find and update NeedIt records for a type of request.\", vaContext.getRequesterLang())"},"id":"4abc74bbad6e495ca8de617629b8e6c8","name":"Start"},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Ask again when you need to update other NeedIt records\", vaContext.getRequesterLang())"},"id":"607c2ca32ec747b180a29841c956182e","name":"End"},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"a6c8392a81d744a2b6b9097118d0b9f9","name":"NeedIt Type","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"variable_id":"809e8f29a66246a99f2ea6a15a5af13f","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Which type of NeedIt record would you like to view?\", vaContext.getRequesterLang())"},"skippable":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true}}],"edges":[{"type":"Edge","source_node_id":"4abc74bbad6e495ca8de617629b8e6c8","target_node_id":"a6c8392a81d744a2b6b9097118d0b9f9","id":"9d322264fee54c92b8e71f00821fab11"},{"type":"Edge","source_node_id":"a6c8392a81d744a2b6b9097118d0b9f9","target_node_id":"607c2ca32ec747b180a29841c956182e","id":"fe1ced497e89410981a18a3d49f21bfe"}],"id":"primary"}],"script_variables":[{"type":"String","name":"LiveAgent_application","value":{"type":"String","mode":"string"},"list":false,"id":"b281fbee00ab4af88e13b8d75aa54ffe","formatType":"text","secure":false,"sensitive":false}],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"Choice","choices":[{"name":"Legal","element":"legal"},{"name":"Facilities","element":"faclilties"},{"name":"Human Resources","element":"human resources"}],"id":"809e8f29a66246a99f2ea6a15a5af13f","name":"needit_type","formatType":"text","secure":false,"sensitive":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"8b202c6c1b11951032d14196bc4bcbad","domain":"global","topic_type":"STANDARD","channels":[],"id":"ad3128ac1b11951032d14196bc4bcb1f","name":"_PRVW__6502bca8db51951078be3ea3d4617852","key_phrases":["Update NeedIt records"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"174060601b51951032d14196bc4bcb02"}],"triggerable_by_notification":false,"library":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>ad3128ac1b11951032d14196bc4bcb1f</design_topic_id>
+        <name>_PRVW__6502bca8db51951078be3ea3d4617852</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-10 12:08:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2902b8ec1b51951032d14196bc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt Virtual Agent Conversations" source="x_743605_needit_vi">8b202c6c1b11951032d14196bc4bcbad</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt Virtual Agent Conversations">8b202c6c1b11951032d14196bc4bcbad</sys_scope>
+        <sys_update_name>sys_cb_design_topic_2902b8ec1b51951032d14196bc4bcb31</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-10 12:08:14</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>
